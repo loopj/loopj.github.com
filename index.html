@@ -1,0 +1,21 @@
+---
+layout: default
+title: James Smith • loopj.com
+---
+
+<div id="home">
+    <h2>About Me</h2>
+    <p>
+        I'm James Smith, CTO of <a href="http://www.heyzap.com">heyzap.com</a>. Originally from London, UK I now live in San Francisco.
+    </p>
+    <p>
+        I've previously built web apps (wegot.tv, helpthirst.com), facebook apps (sponsor-me) and I used to work as a forex financial developer at Bloomberg's European headquarters in London.
+    </p>
+
+    <h2>Recent Blog Posts</h2>
+    <ul>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    <ul>
+</div>
