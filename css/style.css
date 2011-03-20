@@ -220,7 +220,18 @@ blockquote {
 }
 
 .social-grill {
+    text-align: center;
+}
+
+.social-grill span {
     line-height: 32px;
+    margin-right: 20px;
+}
+
+.social-grill img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
 }
 
 .social-grill a {
