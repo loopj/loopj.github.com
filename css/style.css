@@ -219,6 +219,15 @@ blockquote {
     margin-bottom: 3px;
 }
 
+.social-grill {
+    line-height: 32px;
+}
+
+.social-grill a {
+    text-decoration: none;
+    color: black;
+}
+
 #instant-demo {
     float: left;
     width: 48%;
