@@ -144,12 +144,12 @@ blockquote {
   margin-bottom: 40px;
 }
 
-#post h2, #project h2 {
+#home h2, #post h2, #project h2 {
   font-size: 1.3em;
   margin: 30px 0 15px 0;
 }
 
-#post h3, #project h3 {
+#home h3, #post h3, #project h3 {
   margin: 25px 0 10px 0;
 }
 
