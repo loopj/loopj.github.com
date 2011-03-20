@@ -5,7 +5,7 @@ title: "jQuery Plugin: Tokenizing Autocomplete Text Entry"
 
 This Project Has Moved!
 -----------------------
-Please head over to:
+For the latest version and awesome documentation, please head over to:
 
 <http://loopj.com/jquery-tokeninput/>
 
@@ -43,6 +43,10 @@ A live demo of the token input is available [here](http://loopj.com/jquery-token
 
 Usage
 -----
+Latest documentation can be found here:
+
+<http://loopj.com/jquery-tokeninput/>
+
 - Make sure you have jquery script included on your page
 - Include jquery.tokeninput.js on your page
 - Include one of the provided stylesheets, or make your own
@@ -68,17 +72,14 @@ License
 -------
 This plugin is released under a dual license. You can choose either the GPL or MIT license depending on the project you are using it in and how you wish to use it.
 
-Download
----------
-
 Quick Download
 --------------
 Please don't use these links directly in your scripts, I might change their location at any time. Instead, download them and use your own local copy.
-- Script: [http://www.loopj.com/tokeninput/jquery.tokeninput.js ](http://www.loopj.com/tokeninput/jquery.tokeninput.js )
-- Facebook style CSS: [http://www.loopj.com/tokeninput/token-input-facebook.css](http://www.loopj.com/tokeninput/token-input-facebook.css)
-- List style CSS: [http://www.loopj.com/token-input.css](http://www.loopj.com/tokeninput/token-input.css)
+- Script: <https://github.com/loopj/jquery-tokeninput/raw/master/src/jquery.tokeninput.js>
+- Facebook style CSS: <https://github.com/loopj/jquery-tokeninput/raw/master/styles/token-input-facebook.css>
+- List style CSS: <https://github.com/loopj/jquery-tokeninput/raw/master/styles/token-input.css>
 
 Github Project
 --------------
 If you would like to contribute to this plugin, check out the github repository here:
-[http://github.com/loopj/jQuery-Tokenizing-Autocomplete-Plugin/tree/master](http://github.com/loopj/jQuery-Tokenizing-Autocomplete-Plugin/tree/master)
+<http://github.com/loopj/jquery-tokeninput>
