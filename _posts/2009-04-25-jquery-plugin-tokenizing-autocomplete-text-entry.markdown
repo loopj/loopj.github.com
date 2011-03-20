@@ -39,7 +39,7 @@ Facebook style item selection
 
 Demo
 ----
-A live demo of the token input is available [here](http://loopj.com/tokeninput/demo.html).
+A live demo of the token input is available [here](http://loopj.com/jquery-tokeninput/demo.html).
 
 Usage
 -----
