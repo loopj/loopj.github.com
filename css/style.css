@@ -88,14 +88,14 @@ blockquote {
   font-style: italic;
 }
 
-#site-header {
+h1 {
   background-color: #444;
   color: #fff;
   text-align: center;
   font-size: 2em;
 }
 
-#site-header a {
+h1 a {
   color: #fff;
   padding: 20px;
   display: block;
