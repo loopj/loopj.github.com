@@ -77,10 +77,12 @@ dd {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-top: 5px;
+    line-height: 1.5;
 }
 
 p {
   margin: 20px 0;
+  line-height: 1.5;
 }
 
 blockquote {
@@ -242,6 +244,23 @@ h1 a {
 .social-grill a {
     text-decoration: none;
     color: black;
+}
+
+#blog-index {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#blog-index > li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+#blog-index > li > span {
+  display: inline-block;
+  width: 100px;
 }
 
 #instant-demo {
