@@ -61,7 +61,7 @@ ol {
 
 ul li, ol li {
     margin-left: 30px;
-    margin-bottom: 3px;
+    line-height: 1.5;
 }
 
 ol li {
