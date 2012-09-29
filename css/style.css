@@ -152,7 +152,7 @@ h1 a {
 #home h2, #post h2, #project h2 {
   font-size: 1.3em;
   margin: 40px 0 15px 0;
-  border-bottom: 1pd solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
 }
 
 #home h3, #post h3, #project h3 {
