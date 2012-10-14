@@ -50,6 +50,17 @@ body {
     font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+  color: #225588;
+  border-bottom: 1px dotted #dfdfdf;
+  -webkit-transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #002255;
+}
+
 ul {
     list-style: disc;
     margin-top: 10px;
@@ -94,14 +105,18 @@ h1 {
   background-color: #444;
   color: #fff;
   text-align: center;
-  font-size: 2em;
+  font-size: 24px;
 }
 
 h1 a {
   color: #fff;
-  padding: 20px;
+  padding: 15px;
   display: block;
   text-decoration: none;
+}
+
+h1 a:hover {
+  color: #fff;
 }
 
 #wrap {
