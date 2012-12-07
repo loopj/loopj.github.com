@@ -46,4 +46,4 @@ X-Hacker: bakedcode.com/jobs
 
 I'm sure there are a ton more interesting/fun headers out there, if you've 
 seen a particularly good one, add it to the 
-[discussion on Hacker News](http://news.ycombinator.com/news).
+[discussion on Hacker News](http://news.ycombinator.com/item?id=4886291).
