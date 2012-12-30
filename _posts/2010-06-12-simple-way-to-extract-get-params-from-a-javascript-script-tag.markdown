@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple Way to Extract GET Params from a JavaScript Script Tag
+title: Extract GET Params from a JavaScript Script Tag
 ---
 
 Here’s a simple trick to extracting HTTP GET style parameters from a &lt;script&gt; tag, from within the script itself.
