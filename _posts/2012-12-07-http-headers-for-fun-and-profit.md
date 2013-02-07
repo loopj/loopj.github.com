@@ -11,7 +11,7 @@ Pinterest loves corgis
 
 [Pinterest](http://pinterest.com/) seem to be a fan of corgi dogs:
 
-{% highlight sh-session %}
+{% highlight bash %}
 $ curl -I pinterest.com
 
 Breed: CORGI
@@ -23,7 +23,7 @@ Newsblur love *The Simpsons*
 
 [Newsblur](http://www.newsblur.com/) will deliver you a random *Simpsons* quote in their HTTP headers:
 
-{% highlight sh-session %}
+{% highlight bash %}
 $ curl -I newsblur.com
     
 X-Homer: D'oh.
@@ -37,7 +37,7 @@ Interstate loves hackers
 
 [Interstate](http://interstateapp.com/) use their header to find hackers looking for a job:
 
-{% highlight sh-session %}
+{% highlight bash %}
 $ curl -I interstateapp.com
 
 X-Company: BakedCode
