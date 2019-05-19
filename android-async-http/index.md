@@ -2,11 +2,9 @@
 layout: project
 title: Android Asynchronous Http Client
 tagline: A Callback-Based Http Client Library for Android
-version: 1.4.9
-github_repo: android-async-http
-download_url: https://search.maven.org/remotecontent?filepath=com/loopj/android/android-async-http/1.4.9/android-async-http-1.4.9.jar
 ---
 
+[View Code on GitHub](https://github.com/android-async-http/android-async-http)
 
 Overview
 --------
@@ -315,7 +313,7 @@ Testing on device
 You can test the library on real device or emulator using provided Sample Application.
 Sample application implements all important functions of library, you can use it as source of inspiration.
 
-Source code of sample application: <https://github.com/loopj/android-async-http/tree/master/sample>
+Source code of sample application: <https://github.com/android-async-http/android-async-http/tree/master/sample>
 
 To run sample application, clone the android-async-http github repository and run command in it's root:
 
@@ -324,7 +322,7 @@ gradle :sample:installDebug
 {% endhighlight %}
 
 Which will install Sample application on connected device, all examples do work immediately, if not
-please file bug report on <https://github.com/loopj/android-async-http/issues>
+please file bug report on <https://github.com/android-async-http/android-async-http/issues>
 
 Building from Source
 --------------------
@@ -343,7 +341,7 @@ Reporting Bugs or Feature Requests
 Please report any bugs or feature requests on the github issues page for this
 project here:
 
-<https://github.com/loopj/android-async-http/issues>
+<https://github.com/android-async-http/android-async-http/issues>
 
 
 Credits & Contributors
@@ -380,7 +378,7 @@ Linden Darling (<https://github.com/coreform>)
 
 And many others, contributions are listed in each file in license header.
 You can also find contributors by looking on project commits, issues and pull-requests 
-on [Github](https://github.com/loopj/android-async-http/commits/master)
+on [Github](https://github.com/android-async-http/android-async-http/commits/master)
 
 License
 -------
