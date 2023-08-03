@@ -1,5 +1,5 @@
 @import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&family=Comfortaa:wght@700&display=swap');
 
 body {
     background-color: var(--ctp-mocha-mantle);
@@ -13,6 +13,8 @@ h1 {
     text-align: center;
     font-size: 3rem;
     margin: 20px 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
 }
 
 h1 a {
