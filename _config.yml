@@ -1,3 +1,9 @@
 permalink: pretty
 url: http://loopj.com
 markdown: kramdown
+highlighter: none
+safe: true
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from

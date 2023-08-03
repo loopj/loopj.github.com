@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ page.title }} • loopj.com</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/default.min.css" />
+    <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-mocha.css" />
+    <link rel="stylesheet" href="//unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
+    <script src="//unpkg.com/highlightjs-copy@1.0.3/dist/highlightjs-copy.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        hljs.addPlugin(new CopyButtonPlugin());
+    </script>
+</head>
+
+<body>
+    <h1><a href="/">James Smith</a></h1>
+
+    {{ content }}
+</body>
+
+</html>
