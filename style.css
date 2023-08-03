@@ -22,16 +22,40 @@ h1 a {
 h2 {
     font-size: 2rem;
     margin: 10px 0 20px;
-    color: var(--ctp-mocha-mauve);
+    color: var(--ctp-mocha-green);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 30px 0 10px;
+    color: var(--ctp-mocha-yellow);
 }
 
 h3:first-of-type {
     margin-top: 0;
 }
 
-h3 {
-    font-size: 1.2rem;
-    margin: 30px 0 10px;
+h4 {
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+    color: var(--ctp-mocha-peach);
+    font-weight: 400;
+}
+
+#bio h2 {
+    color: var(--ctp-mocha-green);
+}
+
+#professional h2 {
+    color: var(--ctp-mocha-yellow);
+}
+
+#projects h2 {
+    color: var(--ctp-mocha-peach);
+}
+
+#professional h3 {
+    color: var(--ctp-mocha-text);
 }
 
 p {

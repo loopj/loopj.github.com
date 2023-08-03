@@ -17,7 +17,7 @@ The [ROCK 5A](https://docs.radxa.com/en/rock5/rock5a/getting-started/overview) i
 
 Here's how to get started.
 
-## Flashing a minimal Debian image
+### Flashing a minimal Debian image
 
 Download the latest Armbian image for the ROCK 5A from [here](https://mirror-us-phx1.armbian.airframes.io/dl/rock-5a/archive/). I recommend using the minimal Debian bookworm image.
 
@@ -25,7 +25,7 @@ Flash the image to your microSD card or eMMC module using [Etcher](https://www.b
 
 Insert the microSD card or eMMC module into your Rock 5A and power it on. Once booted, go through the initial setup process. If you are doing a headless setup, you can connect to the ROCK 5A using SSH with default username `root` and password `1234`.
 
-## Installing Klipper with KIAUH
+### Installing Klipper with KIAUH
 
 KIAUH is a script that makes it easy to install Klipper, Moonraker, and a web interface on a Debian-based system. It works out of the box on Armbian on the ROCK 5A.
 
@@ -49,13 +49,13 @@ Finally, run KIAUH:
 
 Install Klipper, Moonraker, and your desired web interface (I use Mainsail) using the KIAUH menu.
 
-## Connecting to your printer
+### Connecting to your printer
 
 USB works out of the box on the ROCK 5A, so you should now be able to connect to your printer's controller board using a USB cable.
 
 From here, you should be able to follow the [Klipper Getting Started Guide](https://www.klipper3d.org/Getting_Started.html) or your printer's specific guide to get up and running. Happy printing!
 
-## Optional: Using the native CAN interface
+### Optional: Using the native CAN interface
 
 The Rock 5A's RK3588 has native CAN bus support, and the Rock 5A even exposes it on the 40-pin GPIO header! This means we can use it to talk to CAN bus toolhead boards *without a USB CAN adapter* like a BTT U2C or Canable.
 
@@ -64,7 +64,7 @@ According to the [Rock 5A GPIO docs](https://wiki.radxa.com/Rock5/hardware/5a/gp
 - `CAN1_TX_M1` - GPIO 11
 - `CAN1_RX_M1` - GPIO 13
 
-### Additional Hardware
+#### Additional Hardware
 
 You will, however, need to attach a CAN bus transceiver such as a the `SN65HVD230` or `TJA1051`. You can find CAN bus transceiver breakout boards on AliExpress for less than $1.
 
@@ -72,13 +72,13 @@ I used a `SN65HVD230` breakout board connected like this:
 
 ![Rock 5A with SN65HVD230](/images/rock-5a-can-transceiver.png)
 
-### Device Tree Overlay
+#### Device Tree Overlay
 
 You can activate the `CAN1-M1` interface using a device tree overlay.
 
 Add `overlays=rk3588-can1-m1` to `/boot/armbianEnv.txt` and reboot. You should now see the `can0` interface when running `ip link`.
 
-## Optional: Setting up the CAN network
+### Optional: Setting up the CAN network
 
 Armbian uses `NetworkManager` to manage network interfaces, which doesn't support configuring CAN networks. We'll need to make sure we also have `ifupdown` available, then we can configure the CAN network using that.
 
