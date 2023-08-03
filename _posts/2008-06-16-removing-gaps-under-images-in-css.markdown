@@ -1,36 +1,36 @@
---- 
+---
 layout: post
 title: Removing Gaps Under Images In CSS
 ---
 
 CSS veterans will probably already know this, but here's a fix to a problem which has been bugging me for ages.
 
-Problem:
--------
+### Problem
+
 If you have something like:
 
-{% highlight html %}
+```html
 <div>
     <img src="blah.jpg" />
 </div>
-{% endhighlight %}
+```
 
 You may see a gap below the image on some browsers, a gap which cannot be removed by setting the padding/margins to 0:
 
 ![Gap example](/images/gap.gif)
 
-Solution:
---------
+### Solution
+
 `<img>` tags are rendered using display: inline by default, which means they act and flow like text does on a page. In order to stop spaces being added (caused by spaces next to the img tag in your html), you should set your img to use `display: block`:
 
-{% highlight html %}
+```html
 <img style="display: block" src="..." alt="" />
-{% endhighlight %}
+```
 
 This means your image will no longer act like flowing text and will no longer have a gap below it!
 
-Caveats:
--------
+### Caveats
+
 Changing from display: inline means your img tag will ignore things like text-align: center, and other alignments specific to displaying elements inline.
 
 ![Mind the gap](/images/mind-the-gap.jpg)

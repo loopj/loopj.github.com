@@ -5,24 +5,24 @@ title: Extract GET Params from a JavaScript Script Tag
 
 Here’s a simple trick to extracting HTTP GET style parameters from a &lt;script&gt; tag, from within the script itself.
 
-Motivation
-----------
+### Motivation
+
 At [Heyzap](http://www.heyzap.com), we create a variety of games widgets that publishers can embed on their sites to instantly get great game content. Publishers can choose which games appear on their widget by supplying a custom "embed key" to the widget.
 
 Typically, you'd supply extra context to a javascript embed as follows:
 
-{% highlight html %}
+```html
 <script type="javascript" src="http://www.blah.com/myscript.js"></script>
 <script type="javascript">
     new HeyzapWidget({key: "123"});
 </script>
-{% endhighlight %}
+```
 
 It would be much nicer, however, to be able to do this in one line:
 
-{% highlight html %}
+```html
 <script type="javascript" src="http://www.blah.com/myscript.js?key=123"></script>
-{% endhighlight %}
+```
 
 This way we'd be able give publishers only one line to copy and paste into their site, rather than four.
 
@@ -30,15 +30,14 @@ You could provide this "one line" version to publisher if the javascript was dyn
 
 Ideally we want to be able to do this *entirely in javascript* in the file we are including. This way, we can host the file anywhere, including cloud services such as S3.
 
-Shut up and show me some code...
---------------------------------
+### Shut up and show me some code
 
-{% highlight javascript %}
+```javascript
 // Extract "GET" parameters from a JS include querystring
 function getParams(script_name) {
   // Find all script tags
   var scripts = document.getElementsByTagName("script");
-  
+
   // Look through them trying to find ourselves
   for(var i=0; i<scripts.length; i++) {
     if(scripts[i].src.indexOf("/" + script_name) > -1) {
@@ -54,11 +53,11 @@ function getParams(script_name) {
       return p;
     }
   }
-  
+
   // No scripts match
   return {};
 }
 
 // Mini version :)
 function getParams(a){var b=document.getElementsByTagName("script");for(var i=0;i<b.length;i++){if(b[i].src.indexOf("/"+a)>-1){var c=b[i].src.split("?").pop().split("&");var p={};for(var j=0;j<c.length;j++){var d=c[j].split("=");p[d[0]]=d[1]}return p}}return{}}
-{% endhighlight %}
+```
