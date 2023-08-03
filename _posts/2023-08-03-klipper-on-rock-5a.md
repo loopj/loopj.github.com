@@ -4,18 +4,18 @@ title: Klipper on Radxa Rock 5A
 permalink: klipper-on-rock-5a
 ---
 
-The [ROCK 5A](https://docs.radxa.com/en/rock5/rock5a/getting-started/overview) is a single board computer by Radxa. It's a great choice for running Klipper on printers like a Voron 2.4 because it:
+The [ROCK 5A](https://docs.radxa.com/en/rock5/rock5a/getting-started/overview) is a single board computer by Radxa that:
 
 - Has the same footprint and mounting pattern as a Raspberry Pi 4
-- Uses the 8-core Rockchip RK3588 chipset which is [hella fast](https://github.com/ThomasKaiser/sbc-bench/blob/master/Results.md)
+- Uses the 8-core Rockchip RK3588s chipset which is [hella fast](https://github.com/ThomasKaiser/sbc-bench/blob/master/Results.md)
 - Has a PCIe slot for adding a NVMe SSD or a WiFi card
 - Has an eMMC slot for adding a fast storage device (~2x faster than a microSD card)
-- Exposes the RK3588's CAN bus interace on the 40-pin GPIO header
+- Exposes the RK3588s CAN bus interace on the 40-pin GPIO header
 - Is actually *in stock* and available for purchase
 
 ![Radxa Rock 5A](/images/rock5a.png)
 
-Here's how to get started.
+Here's how to get started using the ROCK 5A with Klipper.
 
 ### Flashing a minimal Debian image
 
@@ -115,3 +115,5 @@ If you have a CAN bus toolhead board connected, you should now see it when runni
 $ ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 Found canbus_uuid=3a6bff7c76a8, Application: Klipper
 ```
+
+That's it! You should now be able to [follow the rest of the Klipper docs](https://www.klipper3d.org/CANBUS.html#configuring-klipper) to use the CAN bus interface with Klipper.
