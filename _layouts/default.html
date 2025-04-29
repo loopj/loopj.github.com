@@ -2,29 +2,56 @@
 <html>
 
 <head>
-    <title>{{ page.title }} • loopj.com</title>
+  <title>{{ page.title }} • loopj.com</title>
 
-    <link rel="stylesheet" href="/style.css" />
+  <style>
+    body {
+      margin: 20px 30px;
+      font-family: monospace;
+      font-size: 16px;
+      line-height: 1.4;
+      background-color: #000;
+      color: #fff;
+      max-width: 640px;
+    }
 
-    <!-- Syntax highlighting -->
-    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/default.min.css" />
-    <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-mocha.css" />
-    <link rel="stylesheet" href="//unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
-    <script src="//unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
-    <script src="//unpkg.com/highlightjs-copy@1.0.3/dist/highlightjs-copy.min.js"></script>
-    <script>
-        hljs.highlightAll();
-        hljs.addPlugin(new CopyButtonPlugin());
-    </script>
+    a {
+      color: #9fb;
+      text-decoration: none;
+    }
 
-    <!-- Anchor links -->
-    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+    dd {
+      margin: 5px 0 30px 0;
+    }
+
+    blockquote {
+      border-left: 4px solid #eee;
+      margin: 25px 0;
+      padding: 0 0 0 20px;
+      font-style: italic;
+    }
+
+    pre {
+      width: 95vw;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/github-dark.min.css" />
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
+  <script src="https://unpkg.com/anchor-js@5.0.0/anchor.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      hljs.highlightAll();
+      anchors.add();
+    });
+  </script>
 </head>
 
 <body>
-    <h1><a href="/">loopj</a></h1>
+  <h1><a href="/">loopj</a></h1>
 
-    {{ content }}
+  {{ content }}
 </body>
 
 </html>

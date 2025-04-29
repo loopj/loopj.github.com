@@ -7,4 +7,4 @@ title: "jQuery Plugin: Tokenizing Autocomplete Text Entry"
 
 For the latest version and awesome documentation, please head over to:
 
-<http://loopj.com/jquery-tokeninput/>
+<https://github.com/loopj/jquery-tokeninput>
