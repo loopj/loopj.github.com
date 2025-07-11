@@ -36,3 +36,11 @@ I'm [@loopj.com](https://bsky.app/profile/loopj.com) on Bluesky and I'm active o
 [Android Smart Image View](https://github.com/loopj/android-smart-image-view)
 : Drop-in replacement for Android’s standard ImageView which allows images to be loaded from URLs or the phone’s
   contact address book. Images are cached to memory and to disk for super fast loading.
+
+## Links
+
+[BitBuilt](https://bitbuilt.net/)
+: Community for console portablizing enthusiasts.
+
+[Flashfire](https://flashfi.re/)
+: My buddy Mackie's store, sells essential [console portablizing products](https://flashfi.re/collections/all), a sick [HDMI to USB-C PCB module](https://flashfi.re/products/melonhd) and more.
