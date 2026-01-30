@@ -3,12 +3,14 @@ title: James Smith
 layout: default
 ---
 
-I'm James Smith, software engineer and entrepreneur with a British accent based in the San Francisco Bay Area. Currently having
-fun with hardware, software and reverse engineering. Formerly co-founder at Bugsnag, CTO at Heyzap.
+I'm James Smith, software engineer and entrepreneur with a British accent based in the San Francisco Bay Area. Currently having fun with hardware, software and reverse engineering. Formerly co-founder at Bugsnag, CTO at Heyzap.
 
 I'm [@loopj.com](https://bsky.app/profile/loopj.com) on Bluesky and I'm active on Discord.
 
 ## Projects
+
+[libjoybus](https://github.com/loopj/libjoybus)
+: Implementation of the Joybus protocol used by N64 and GameCube controllers, for 32-bit microcontrollers
 
 [WavePhoenix](https://github.com/loopj/wavephoenix)
 : Open-source implementation of the Nintendo WaveBird protocol using Silicon Labs Wireless Gecko SoCs
@@ -36,11 +38,3 @@ I'm [@loopj.com](https://bsky.app/profile/loopj.com) on Bluesky and I'm active o
 [Android Smart Image View](https://github.com/loopj/android-smart-image-view)
 : Drop-in replacement for Android’s standard ImageView which allows images to be loaded from URLs or the phone’s
   contact address book. Images are cached to memory and to disk for super fast loading.
-
-## Links
-
-[BitBuilt](https://bitbuilt.net/)
-: Community for console portablizing enthusiasts.
-
-[Flashfire](https://flashfi.re/)
-: My buddy Mackie's store, sells essential [console portablizing products](https://flashfi.re/collections/all), a sick [HDMI to USB-C PCB module](https://flashfi.re/products/melonhd) and more.
